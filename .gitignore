@@ -18,6 +18,8 @@
 *.elf
 *.swp
 *.bin
+*.bin.digest
+*.bin.gz
 *.patch
 *.cfgtmp
 *.img
