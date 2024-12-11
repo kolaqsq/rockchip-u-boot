@@ -12,11 +12,11 @@ CMD_ARGS=$1
 
 ########################################### User can modify #############################################
 RKBIN_TOOLS=../rkbin/tools
-if [ $CUSTOM_TOOLCHAIN_PATH = "" ];
+if [ $RKUB_CUSTOM_TOOLCHAIN_PATH = "" ];
 then
     CROSS_COMPILE_ARM32=../prebuilts/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-
 else
-    CROSS_COMPILE_ARM32=$CUSTOM_TOOLCHAIN_PATH
+    CROSS_COMPILE_ARM32=$RKUB_CUSTOM_TOOLCHAIN_PATH
 fi
 CROSS_COMPILE_ARM64=../prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-
 ########################################### User not touch #############################################
